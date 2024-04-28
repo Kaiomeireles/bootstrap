@@ -11,9 +11,7 @@ nav div {
 
 nav img {
     width: 70px;
-    /* Ajuste o valor conforme necessário */
     height: auto;
-    /* Isso mantém a proporção da imagem */
 }
 
 
@@ -41,12 +39,30 @@ nav a:hover {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('images/10pasteis-bauru-5-850x639.jpg');
+    background-image: url('images/Default_Fried_pastry_0.jpg');
     background-size: cover;
     background-position: center;
-    background-color: #f4f4f4;
-
+    background-color: rgba(244, 244, 244, 0.5); 
 }
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1, p {
+    color: white; /* Letras brancas */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/Default_Fried_pastry_0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(244, 244, 244, 0.5); 
+}
+ 
 
 body::before {
     content: '';
@@ -56,7 +72,7 @@ body::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.5);/ z-index: -1;
+    background: rgba(0, 0, 0, 0.5);/ z-index: -1;
 }
 
 .container {
@@ -202,9 +218,8 @@ body::before {
 
 .item {
     flex: 1 0 21%;
-    /* O valor de 21% aqui permite 4 itens por linha */
     margin: 1%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
     overflow: hidden;
 }
 
@@ -215,5 +230,73 @@ body::before {
 
 .item h4,
 .item p {
-    padding: 0.5em;
+    padding: 1rem;
+    color: white; 
+}
+
+
+
+#sobre-nos {
+    background-color: #f8f9fa; 
+    padding: 750px; 
+}
+
+#sobre-nos h2 {
+    font-size: 2em;
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 70px; 
+}
+
+#sobre-nos p {
+    font-size: 1.1em; 
+    line-height: 1.6; 
+    color: #555; 
+    margin-bottom: 80px; 
+}
+
+#contato {
+    background-color: #f8f9fa; 
+    padding: 250px; 
+    
+}
+
+#contato h2 {
+    font-size: 2em; 
+    color: #333; 
+    text-align: center; 
+
+    margin-bottom: 30px; 
+}
+
+#contato h4 {
+    font-size: 1.5em; 
+    color: #555;
+    margin-bottom: 20px; 
+
+}
+
+#contato p {
+    font-size: 1.1em; 
+    line-height: 1.6;
+    color: #555; 
+    margin-bottom: 10px; 
+}
+
+#contato ul {
+    margin-left: 20px; 
+}
+
+#contato ul li {
+    margin-bottom: 5px; 
+    
+}
+
+#contato ul li a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+#contato ul li a:hover {
+    text-decoration: underline; 
 }
